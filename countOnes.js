@@ -3,6 +3,19 @@
 
 // your code here
 
+const countOnes = function(arr) {
+    let cnt = 0;
+    for (i = 0; i < arr.length; i++) {
+        for (j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] === 1) {
+                cnt++;
+            }
+        }
+    }
+
+    return cnt;
+}
+
 
 console.log(countOnes([
     [1, 0],

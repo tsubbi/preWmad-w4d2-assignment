@@ -2,7 +2,23 @@
 // Return a new (single) array with the largest numbers of each.
 
 //you code here
+const findLargestNums = function(arr) {
+    let resultArr = [];
 
+    for (i = 0; i < arr.length; i++) {
+        let tmpMax = arr[i][0];
+
+        for (j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] > tmpMax) {
+                tmpMax = arr[i][j];
+            }
+        }
+
+        resultArr.push(tmpMax);
+    }
+
+    return resultArr;
+}
 
 
 console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]])); 

@@ -4,6 +4,14 @@
 // do not use the .concat() method. 
 
 
+const concat = function(firstArr, secondArr) {
+    for (i = 0; i < secondArr.length; i++) {
+        firstArr.push(secondArr[i]);
+    }
+    return firstArr;
+}
+
+
 // your code here
 
 

@@ -6,15 +6,7 @@ const findLargestNums = function(arr) {
     let resultArr = [];
 
     for (i = 0; i < arr.length; i++) {
-        let tmpMax = arr[i][0];
-
-        for (j = 0; j < arr[i].length; j++) {
-            if (arr[i][j] > tmpMax) {
-                tmpMax = arr[i][j];
-            }
-        }
-
-        resultArr.push(tmpMax);
+        resultArr.push(Math.max(...arr[i]));
     }
 
     return resultArr;

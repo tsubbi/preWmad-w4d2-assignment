@@ -3,7 +3,17 @@
 
 //your code here
 
+const arrBetween = function(lowerLimit, upperLimit, data) {
+    let result = [];
 
+    for (i = 0; i < data.length; i++) {
+        if (data[i] > lowerLimit && data[i] < upperLimit) {
+            result.push(data[i]);
+        }
+    }
+
+    return result;
+}
 
 
 console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7])); 
